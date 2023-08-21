@@ -1,0 +1,174 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #007bff; /* Enlaces de color azul */
+    text-decoration: none;
+}
+
+/* Estilo para los enlaces cuando se les pasa el mouse */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el encabezado de la tarjeta */
+.card-header {
+    background-color: #007bff; /* Encabezado de tarjeta en azul */
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    color: #fff; /* Texto blanco para el título */
+}
+
+/* Estilo para el botón de búsqueda */
+.btn-primary {
+    background-color: #007bff; /* Botón azul */
+    border-color: #007bff; /* Borde azul */
+}
+
+/* Estilo para el botón de búsqueda cuando se pasa el mouse */
+.btn-primary:hover {
+    background-color: #0056b3; /* Botón azul oscuro */
+    border-color: #0056b3; /* Borde azul oscuro */
+}
+
+/* Estilo para el texto del atributo placeholder */
+.custom-placeholder::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Color de texto con transparencia para efecto de placeholder */
+}
+
+/* Estilo para el contenedor de resultados de búsqueda */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para los resultados de búsqueda */
+.libro {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #2e2e2e; /* Fondo oscuro para los resultados */
+    color: #fff; /* Texto blanco para los resultados */
+}
+
+/* Estilo para el enlace de ver detalles */
+.enlace-detalle a {
+    color: #007bff; /* Enlaces de color azul */
+    text-decoration: none;
+}
+
+/* Estilo para el enlace de ver detalles cuando se pasa el mouse */
+.enlace-detalle a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos para la página de inicio */
+.container {
+    padding: 50px;
+}
+
+.card {
+    border: none;   
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    border-radius: 0 0 10px 10px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+
+/* Estilos para la página de detalles del libro */
+.libro-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.back-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos para la página de inicio de sesión */
+.card-login {
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-login .card-header {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card-login .card-body {
+    padding: 2rem;
+}
+
+.card-login .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.card-login .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.card-login p {
+    margin-top: 1rem;
+}
+
+.card-login a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-login a:hover {
+    text-decoration: underline;
+}
+

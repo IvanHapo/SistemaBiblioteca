@@ -1,0 +1,33 @@
+{% extends 'navbar.html' %}
+
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Resultados de Búsqueda</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Resultados de Búsqueda</h1>
+        <a href="{% url 'buscar_libros' %}" class="back-link">Volver al formulario de búsqueda</a>
+        {% if libros %}
+            {% for libro in libros %}
+                <div class="libro">
+                    <div class="titulo">{{ libro.titulo }}</div>
+                    <div class="enlace-detalle">
+                        <a href="{% url 'detalle_libro' libro.id %}">Ver detalles</a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No se encontraron resultados.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+{% endblock %}

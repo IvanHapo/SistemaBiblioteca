@@ -1,0 +1,23 @@
+{% extends 'navbar.html' %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<div class="container mt-5 bg-dark">
+    <h1 class="text-center">Detalles del Libro</h1>
+    <a href="{% url 'buscar_libros' %}" class="back-link">Volver al formulario de búsqueda</a>
+    <div class="libro-details bg-dark">
+        <strong>Título:</strong> {{ libro.titulo }}<br>
+        <strong>Autor:</strong> {{ libro.autor }}<br>
+        <strong>Género:</strong> {{ libro.genero }}<br>
+        <strong>Año de Publicación:</strong> {{ libro.anio_publicacion }}
+        <form action="{% url 'eliminar_libro' libro.id %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Eliminar libro</button>
+        </form>
+    </div>
+        
+</div>
+{% endblock %}
+
